@@ -1,6 +1,14 @@
+<script setup>
+const route = useRoute();
+const message = computed(
+  () =>
+    `I'm on team: ${route.params.teamSlug}
+    and my user id is: ${route.params.userId}`,
+);
+</script>
+
 <template>
-  <div>
-    <p>I'm on team: {{ $route.params.teamSlug }}</p>
-    <p>and my user id is: {{ $route.params.userId }}</p>
-  </div>
+  <p>
+    {{ message }}
+  </p>
 </template>

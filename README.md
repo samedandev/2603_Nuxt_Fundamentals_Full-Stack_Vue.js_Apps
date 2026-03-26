@@ -30,3 +30,9 @@
 # Reading the Slug Data
 
 > ![reading slugs](https://github.com/samedandev/2603_Nuxt_Fundamentals_Full-Stack_Vue.js_Apps/blob/main/_printscreens/print01.jpg)
+
+## Movie DBB
+
+> app/pages/movies/index.vue -> http://www.omdbapi.com/?apikey=&s=${query.value}
+
+> ![searchimdb](https://github.com/samedandev/2603_Nuxt_Fundamentals_Full-Stack_Vue.js_Apps/blob/main/_printscreens/print03.jpg)
