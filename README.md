@@ -36,3 +36,9 @@
 > app/pages/movies/index.vue -> http://www.omdbapi.com/?apikey=&s=${query.value}
 
 > ![searchimdb](https://github.com/samedandev/2603_Nuxt_Fundamentals_Full-Stack_Vue.js_Apps/blob/main/_printscreens/print03.jpg)
+
+# useAsyncData for Vue/Nuxt async/await
+
+> /pages/movies/[id].vue
+
+> useAsyncData(`Unique_KEy`,() => {})
