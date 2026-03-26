@@ -42,3 +42,22 @@
 > /pages/movies/[id].vue
 
 > useAsyncData(`Unique_KEy`,() => {})
+
+# pick the data returned with useAsyncData Options
+
+> https://nuxt.com/docs/4.x/api/composables/use-async-data
+> pick: ["Plot", "Title"],
+
+# useFetch conbines useAsyncData with options
+
+> /pages/movies/[id].vue
+
+```
+const { data } = useFetch(
+  `http://www.omdbapi.com/?apikey=dc846edc&i=${route.params.id}`,
+  {
+    pick: ["Plot", "Title"],
+    key: `/movies/${route.params.id}`,
+  },
+);
+```
